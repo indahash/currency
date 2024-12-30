@@ -26,6 +26,8 @@ class Currency
     protected $exchange;
     protected $original =  0;
     protected $value    =  0;
+    protected FormatInterface $format;
+    protected $currency;
 
     public function __construct(ExchangeInterface $exchange, FormatInterface $format)
     {
